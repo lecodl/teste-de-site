@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Urubu do Pix</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Urubu do Pix</h1>
+  <img src="imagens/urubulogo.png" class="img-titulo" />
+  <div class="carteira">
+    <p>Carteira: R$ <span id="saldo">0</span></p>
+    <button id="addMoneyBtn">Adicionar R$100</button>
+  </div>
+
+  <hr />
+
+  <div class="jogos">
+
+    <div class="jogo-box">
+      <h2>Cara ou Coroa</h2>
+      <label>
+        <input type="radio" name="caraCoroa" value="Cara" checked /> Cara
+      </label>
+      <label>
+        <input type="radio" name="caraCoroa" value="Coroa" /> Coroa
+      </label>
+      <br />
+      <button onclick="jogoCaraOuCoroa()">Jogar (Aposta R$50)</button>
+      <p id="resultado1"></p>
+    </div>
+
+    <div class="jogo-box">
+      <h2>Adivinhe o Número (1 a 5)</h2>
+      <label for="numeroAposta">Escolha um número:</label>
+      <select id="numeroAposta">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <br />
+      <button onclick="jogoAdivinheNumero()">Jogar (Aposta R$40)</button>
+      <p id="resultado2"></p>
+    </div>
+
+    <div class="jogo-box">
+      <h2>Pedra, Papel ou Tesoura</h2>
+      <label>
+        <input type="radio" name="ppt" value="Pedra" checked /> Pedra
+      </label>
+      <label>
+        <input type="radio" name="ppt" value="Papel" /> Papel
+      </label>
+      <label>
+        <input type="radio" name="ppt" value="Tesoura" /> Tesoura
+      </label>
+      <br />
+      <button onclick="jogoPedraPapelTesoura()">Jogar (Aposta R$30)</button>
+      <p id="resultado3"></p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
