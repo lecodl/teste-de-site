@@ -5,14 +5,11 @@ body {
   padding: 0 15px;
   background: repeating-linear-gradient(
     0deg,
-    red,
-    red 20px,
-    black 20px,
-    black 40px
+    #b3d9ff,   /* azul bebê */
+    #b3d9ff 40px,
+    #f8f9fa,   /* branco gelo */
+    #f8f9fa 80px
   );
-
-  color: black;
-  position: relative;
 }
 
 h1, h2 {
@@ -104,4 +101,5 @@ select {
   margin: 10px auto;
   border-radius: 8px;
   box-shadow: 2px 2px 8px black
+
 }
