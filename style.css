@@ -5,9 +5,9 @@ body {
   padding: 0 15px;
   background: repeating-linear-gradient(
     0deg,
-    #b3d9ff,   /* azul bebê */
+    #b3d9ff,
     #b3d9ff 40px,
-    #f8f9fa,   /* branco gelo */
+    #f8f9fa,
     #f8f9fa 80px
   );
 }
@@ -103,3 +103,4 @@ select {
   box-shadow: 2px 2px 8px black
 
 }
+
